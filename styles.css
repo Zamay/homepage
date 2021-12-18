@@ -22,6 +22,12 @@ body {
   max-width: 900px;
 }
 
+.container__header{
+  color: var(--secondary-text-color);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
 .fh {
   display: flex;
   flex-direction: row;
@@ -38,7 +44,6 @@ body {
   margin: 50px auto;
   border: 1px solid #f5f5f5;
   box-shadow: 1px 1px 7px 7px #f5f5f5;
-  padding: 30px 0;
   max-width: 900px;
 }
 
@@ -134,11 +139,7 @@ Contact info styles
 }
 /**
 Intro and skills styles
-**/.intro {
-     display: flex;
-     justify-content: start;
-   }
-
+**/
 .intro__icon-wrapper {
   margin-right: 30px;
   width: 30px;
@@ -160,22 +161,42 @@ Intro and skills styles
   text-align: justify;
 }
 
-.skills__header {
+.skills__header,
+.intro__header{
   color: var(--secondary-text-color);
   text-align: center;
   margin-bottom: 15px;
 }
 
 .skills__text {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 20px;
+  justify-content: space-between;
   color: var(--secondary-text-color);
   text-align: justify;
+}
+.skills__text .skill {
+  text-align: center;
 }
 /**
 Experience and additonal info styles
 **/
-.experiences {
-  flex: 1 1 60%;
+.container__body_left {
+  display: flex;
+  align-items: center;
+  flex: 1 1 30%;
   margin-right: 50px;
+  color: var(--secondary-text-color);
+}
+
+.container__body_right {
+  flex: 1 1 70%;
+  color: var(--secondary-text-color);
+}
+/* experiences - заменить стиль*/
+.container__body {
+  padding: 10px 0;
 }
 
 .experiences__header {
@@ -220,10 +241,6 @@ Experience and additonal info styles
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
   padding-left: 20px;
-}
-
-.additional-info {
-  flex: 1 1 40%;
 }
 
 .additional-info__education {
