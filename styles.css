@@ -111,6 +111,7 @@ Contact info styles
 
 .contact-info__block--center {
   justify-content: center;
+  min-width: 204px;
 }
 
 .contact-info__item {
