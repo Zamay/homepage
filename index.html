@@ -1,252 +1,368 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
-      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" lang="en">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Résumé</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="resume">
 
-    <div class="tabs">
-      <div class="tab-2">
-        <div>
-          <div class="container">
-            <div class="resume__block">
-              <h1 class="contact-info__header">Замай Дмитро</h1>
-              <h3 class="contact-info__sub-header">Front-end developer</h3>
+<!-- MENU -->
+<nav class="navbar navbar-expand-sm navbar-light">
+  <div class="container p-3">
+    <a class="navbar-brand" href="#">Zamay.dev</a>
 
-              <div class="contact_info_container fh">
-                <div class="contact-info__block contact-info__block-column">
-                  <a href="" rel="author" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg class="contact-info__item-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
-                        <path
-                          d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
-                        </path>
-                      </svg>
-                    </div>
-                    <span>Kyiv, Ukraine</span>
-                  </a>
-                  <a href="tel:+380937613764" rel="author" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-phone-fill" viewBox="0 0 16 16">
-                        <path d="M3 2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V2zm6 11a1 1 0 1 0-2 0 1 1 0 0 0 2 0z"/>
-                      </svg>
-                    </div>
-                    <span>+38093-76-13-76-4</span>
-                  </a>
-                  <a href="mailto:mityazamay@gmail.com?subject=Заголовок&body=сообщение" rel="author" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                      </svg>
-                    </div>
-                    <span>mityazamay@gmail.com</span>
-                  </a>
-                </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <div class="contact-info__block contact-info__block--center">
-                  <img class="contact-info__avatar" src="assets/my-avatar.jpeg" alt="Avatar">
-                </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a href="#about" class="nav-link"><span data-hover="About">About</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#project" class="nav-link"><span data-hover="Projects">Projects</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#resume" class="nav-link"><span data-hover="Resume">Resume</span></a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link"><span data-hover="Contact">Contact</span></a>
+        </li>
+      </ul>
 
-                <div class="contact-info__block contact-info__block-column">
-                  <a href="https://www.instagram.com/mitya_zamay/" rel="author" target="_blank" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                      </svg>
-                    </div>
-                    <span>mitya_zamay</span>
-                  </a>
-                  <a href="https://github.com/Zamay" rel="author" target="_blank" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                    </div>
-                    <span>GitHub</span>
-                  </a>
-                  <a href="https://t.me/mitya_zamay" rel="author" target="_blank" class="contact-info__item">
-                    <div class="contact-info__item-icon-wrapper">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
-                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
-                      </svg>
-                    </div>
-                    <span>Telegram</span>
-                  </a>
-                </div>
-              </div>
+      <ul class="navbar-nav ml-lg-auto">
+        <div class="ml-lg-4">
+          <div class="color-mode d-lg-flex justify-content-center align-items-center">
+            <i id="theme-toggle-dark-icon" class="fa-solid text-xl fa-moon" style="font-size: x-large;"></i>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ABOUT -->
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+        <div class="about-text">
+          <small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>
+          <h1 class="animated animated-text">
+            <span class="mr-2">Hey folks, I'm</span>
+            <div class="animated-info">
+              <span class="animated-item">Dmytro Zamay</span>
+              <span class="animated-item">React Developer</span>
+            </div>
+          </h1>
+
+          <p>Building a successful product is a challenge. I am highly energetic in user experience design, interfaces
+            and web development.</p>
+
+          <div class="custom-btn-group mt-4">
+            <div class="socialbtns">
+              <a href="https://github.com/Zamay" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn">
+                    <i class="fa-brands fa-github" style="color: #000000; font-size: x-large;"></i>
+                </span>
+              </a>
+
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn">
+                  <i class="fa-brands fa-linkedin-in" style="color: #0072b1; font-size: x-large;"></i>
+                </span>
+              </a>
+
+              <a href="https://t.me/zamay_mitya" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn">
+                  <i class="fa-brands fa-telegram" style="color: #0088cc; font-size: x-large;"></i>
+                </span>
+              </a>
+
+              <a href="https://www.instagram.com/mitya_zamay/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn">
+                   <i class="fa-brands fa-instagram" style="color: #e91c63; font-size: x-large;"></i>
+                </span>
+              </a>
+
+              <a href="https://www.facebook.com/MityaZamay/" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn">
+                  <i class="fa-brands fa-facebook-f" style="color: #1773EA; font-size: x-large;"></i>
+                </span>
+              </a>
+
+              <a href="https://twitter.com/mitya_zamay" target="_blank" rel="noopener noreferrer">
+                <span class="socialbtn">
+                  <i class="fa-brands fa-twitter" style="color: #1C9CEA; font-size: x-large;"></i>
+                </span>
+              </a>
+
             </div>
           </div>
-          <div class="container">
-            <div class="resume__block">
-              <div class="intro">
-                <h3 class="container__header">Коротка інформація</h3>
-                <p class="intro_text">
-                  Вітання. Мене звуть Дмитро. В кінці 2021 року почав проходити курси і стажування в фірму, але війна все змінила.
-                  Зараз хочу повернутися у front-end розробку. Проходжу курси з React і Nodejs. Наразі шукаю работу і розглядаю всі варіанти.
-                  Мої роботи можно подивитися тут:
-                  <a href="https://bitbucket.org/zamay-projects/" target="_blank">Bitbucket</a>.
-                </p>
-              </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5 col-md-12 col-12">
+        <div class="about-image svg">
+          <img src="assets/avatar.png" class="img-fluid" alt="avatar">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="project py-5" id="project">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-11 text-center mx-auto col-12">
+        <div class="col-lg-8 mx-auto">
+          <h2>New projects coming soon.. 🤠</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="resume py-5 d-lg-flex justify-content-center align-items-center" id="resume">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 col-12 mt-5">
+        <div class="educations">
+          <i class="mb-4 fa-solid fa-graduation-cap" style="color: #ffc200; font-size: xx-large;"></i>
+          <h2 class="mb-4 mobile-mt-2">Educations</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>Binary Studio Academy</span></h3>
+              <span class="years">2021-2022</span>
+              <span class="position">Full Stack Developer</span>
+              <p>An intensive online course on creating web applications using JavaScript covers the development of
+                various websites and games,
+                as well as the in-depth learning and enhancement of front-end and back-end skills..</p>
             </div>
           </div>
-          <div class="container">
-            <div class="resume__block">
-              <div class="skills">
-                <h3 class="container__header">Ключові навички</h3>
-                <div class="skills__text">
-                  <div class="skill">JavaScript</div>
-                  <div class="skill">ReactJS</div>
-                  <div class="skill">Redux</div>
-                  <div class="skill">TypeScript</div>
-                  <div class="skill">Webpack</div>
-                  <div class="skill">NodeJS</div>
-                </div>
-              </div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>Chernihiv National University of Technology</span></h3>
+              <span class="years">2018-2020</span>
+              <span class="position">Master's degree</span>
+              <p>He received a master's degree in Computer Engineering</p>
             </div>
           </div>
-          <div class="container">
-            <div class="resume__block">
-              <h3 class="container__header">Досвід роботи</h3>
 
-                <div class="container__body fh">
-                  <div class="container__body_left">
-                    <span>2/2022 - 7/2022</span>
-                  </div>
-                  <div class="container__body_right">
-                    Не програмував в цей час. Волонтерив, допомагав рідним, підробляв...
-                  </div>
-                </div>
-
-                <div class="container__body fh">
-                  <div class="container__body_left">
-                    <span>Company name</span>
-                    <span>Position</span>
-                    <span>12/2021 - 02/2022</span>
-                  </div>
-                  <div class="container__body_right">
-                    <b>Binary-studio.com</b><br>
-                    Курси з ReactJs и NodeJs<br>
-                    Стек - React, ReduxToolkit, SCSS, TypeScript, Nodejs, PostgresQL
-                  </div>
-                </div>
-
-                <div class="container__body fh">
-                  <div class="container__body_left">
-                    <span>Company name</span>
-                    <span>Position</span>
-                    <span>09/2019 - 12/2020</span>
-                  </div>
-                  <div class="container__body_right">
-                    <b>ArboCPA</b><br>
-                    Android розробник.<br>
-                    Стек - Java, Js+html+css, Android Studio, Unity, Cordova.
-                  </div>
-                </div>
-                <div class="container__body fh">
-                  <div class="container__body_left">
-                    <span>Company name</span>
-                    <span>Position</span>
-                    <span>01/2019 - 09/2019</span>
-                  </div>
-                  <div class="container__body_right">
-                    <b>Страхова компанія "Гарантія"</b> <br>
-                    Програміст - фронтенд + SQL + сісадмін
-                  </div>
-                </div>
-
-              <div class="container__body fh">
-                <div class="container__body_left">
-                  <span>02/2018 - 08/2018</span>
-                </div>
-                <div class="container__body_right">Підробіток фрілансером (front-end) + закінчував магістратуру</div>
-              </div>
-
-              <div class="container__body fh">
-                <div class="container__body_left">
-                  <span>Company name</span>
-                  <span>Position</span>
-                  <span>01/2017 - 12/2017</span>
-                </div>
-                <div class="container__body_right">
-                  <b>Andersen</b><br>
-                  Front-end developer<br>
-                  Пройшов стажування з Angular2
-                  Працював на проектах (Касперський, Viscosoft,..) Проводив базові курси з JS
-                </div>
-              </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>Chernihiv National University of Technology</span></h3>
+              <span class="years">2012-2018</span>
+              <span class="position">Bachelor's degree</span>
+              <p>He received a bachelor's degree in Computer Engineering</p>
             </div>
           </div>
-          <div class="container">
-            <div class="resume__block">
-              <h3 class="container__header">Освіта</h3>
+        </div>
+      </div>
 
-              <div class="experiences fh">
-                <h4 class="container__body_left">2016 - 2018</h4>
-                <div class="container__body_right">
-                  <b>Чернігівський Національний Технологічний Університет</b><br>
-                  Кафедра – комп'ютерна інженерія, диплом магістра
-                </div>
-              </div>
-              <div class="experiences fh">
-                <h4 class="container__body_left">2012 - 2016</h4>
-                <div class="container__body_right">
-                  <b>Чернігівський Національний Технологічний Університет</b><br>
-                  Кафедра – комп'ютерна інженерія, диплом бакалавра
-                </div>
-              </div>
+      <div class="col-lg-6 col-12 mt-5">
+        <div class="experiences">
+          <i class="mb-4 fa-solid fa-briefcase" style="color: #ffc200; font-size: xx-large;"></i>
+          <h2 class="mb-4">Experiences</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>Freelance</span></h3>
+              <span class="years">2021-2022</span>
+              <span class="position">Frontend Developer</span>
+              <p>Development of Android applications, PWA and custom sites.</p>
+              <button class="knowledges-btn">React.js</button>
+              <button class="knowledges-btn">Redux</button>
+              <button class="knowledges-btn">Node.js</button>
+              <button class="knowledges-btn">TypeScript</button>
             </div>
           </div>
-          <div class="container">
-            <div class="resume__block">
-              <h3 class="container__header">Персональна інформація</h3>
 
-              <div class="person-information fh">
-                <h4 class="container__body_left">Особисті навички</h4>
-                <div class="container__body_right">
-                  На початок 2022 року:<br>
-                  React, redux, SCSS, TypeScript, Nodejs, PostgresQL<br>
-                  На кінець 2020:<br>
-                  Java, Js, Fb SDK, Firebase, OneSignal,<br>
-                  На кінець 2019:<br>
-                  Bootstrap, Material, Avocode, Gulp/Webpack,<br>
-                  На початку 2018 года проходив базові курси з: Nodejs, MongoDB, RxJS, React<br>
-                  Досвід використання: Jira, Git, Trello, Yougile, AWS, Multilogin <br>
-                  Англійська на рівні Pre-Intermediate. І це зараз мій найбільший мінус, бо не можу вільно говорити і розуміти.
-                </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>ArboCPA</span></h3>
+              <span class="years">2019-2020</span>
+              <span class="position">Android Developer</span>
+              <p>Development of Android applications using Android Studio (Java), Unity, Cordova.</p>
+              <button class="knowledges-btn">Android Studio</button>
+              <button class="knowledges-btn">Firebase</button>
+              <button class="knowledges-btn">AWS</button>
+              <button class="knowledges-btn">Fb SDK</button>
+            </div>
+          </div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>ПрАТ «Страхове товариство «Гарантія»</span></h3>
+              <span class="years">2019-2019</span>
+              <span class="position">System Administrator & Frontend Developer</span>
+              <p>Development of the company's website on Joomla (CMS), edits of the company's own CRM,
+                configuration of routing, installation, configuration and administration of servers, solving problems
+                with users.</p>
+            </div>
+          </div>
+
+          <div class="timeline-wrapper">
+            <div class="timeline-info">
+              <h3><span>Andersen Lab</span></h3>
+              <span class="years">2017-2018</span>
+              <span class="position">Angular Developer</span>
+              <p>3 months of internship. Worked on 3 projects - Kaspersky, Viscosoft and a project for sports.
+                Conducted basic JS courses for students.</p>
+              <button class="knowledges-btn">Angular</button>
+              <button class="knowledges-btn">Webpack</button>
+              <button class="knowledges-btn">MongoDB</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact py-5" id="contact">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-6 col-12">
+
+        <div class="contact-info d-flex justify-content-between align-items-center py-4 px-lg-5">
+
+          <div class="w-100">
+            <div class="d-flex align-items-center py-4 border-bottom border-dark=[rgb(227 227 227)] pb-2.5">
+                <span class="socialbtn2 ">
+                  <a href="tel:+380937613764" class="">
+                    <span data-hover="Contact">
+                      <i class="fas fa-mobile-alt" style="color: #E93B81; font-size: x-large;"></i>
+                    </span>
+                  </a>
+                </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-muted">Phone</p>
+                <p>+38 093 7613764</p>
               </div>
-              <div class="person-information fh">
-                <h4 class="container__body_left">Особисті якості</h4>
-                <div class="container__body_right">
-                  Чесність <br>
-                  Швидке навчання <br>
-                  Вміння працювати в команді <br>
-                </div>
+            </div>
+
+            <div class="d-flex align-items-center py-4 border-bottom border-dark=[rgb(227 227 227)] py-2.5">
+                <span class="socialbtn2 ">
+                  <a href="mailto:mityazamay@gmail.com" class="">
+                    <span data-hover="Contact">
+                      <i class="fa-solid fa-envelope-open-text" style="color: #6AB5B9; font-size: x-large;"></i>
+                    </span>
+                  </a>
+                </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-muted">Email</p>
+                <p>mityazamay@gmail.com</p>
               </div>
-              <div class="person-information fh">
-                <h4 class="container__body_left">Інтереси</h4>
-                <div class="container__body_right">
-                  Люблю будь-який вид спорту (теніс, футбол, волейбол,..) <br>
-                  Зараз ходжу на реабілітацію по коліну, займаюся в залі, вчу англ, проходжу курси,
-                </div>
+            </div>
+
+            <div class="d-flex align-items-center py-4 border-bottom border-dark=[rgb(227 227 227)] py-2.5">
+                <span class="socialbtn2 ">
+                  <a href="#contact" class="">
+                    <span data-hover="Contact">
+                      <i class="fa-solid fa-location-dot" style="color: #FD7590; font-size: x-large;"></i>
+                    </span>
+                  </a>
+                </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-muted">Location</p>
+                <p>Kyiv, Ukraine</p>
               </div>
-              <div class="person-information fh">
-                <h4 class="container__body_left">Чого я хочу</h4>
-                <div class="container__body_right">
-                  Я нещодавно переїхав жити до Києва і хочу тут знайти гарний колектив та компанію.
-                  Так як більшу частину часу я проводитиму на роботі, то це важливо.
-                  Цікаві завдання, особистий розвиток, позитивні, товариські колеги, корпоративи – це та інше хотілося б мати.
-                </div>
+            </div>
+
+            <div class="d-flex align-items-center py-4 py-2.5">
+                <span class="socialbtn2 ">
+                  <a href="#contact" class="">
+                    <span data-hover="Contact">
+                      <i class="fa-solid fa-calendar-days" style="color: #C17CEB; font-size: x-large;"></i>
+                    </span>
+                  </a>
+                </span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-muted">Birthday</p>
+                <p>17 March 1994</p>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="col-lg-6 pl-4 col-12">
+        <div class="contact-form">
+          <h2 class="mb-4">Interested to work together? Let's talk</h2>
+
+          <form action="" method="get">
+            <div class="row">
+              <div class="col-lg-6 col-12">
+                <input type="text" class="form-control" name="name" placeholder="Your Name" id="name"
+                       style="border-radius: 0.5rem;">
+              </div>
+
+              <div class="col-lg-6 col-12">
+                <input type="email" class="form-control" name="email" placeholder="Email" id="email"
+                       style="border-radius: 0.5rem;">
+              </div>
+
+              <div class="col-12">
+                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"
+                          style="border-radius: 0.5rem;"></textarea>
+              </div>
+
+              <div class="ml-lg-auto col-lg-5 col-12">
+                <a href="https://t.me/zamay_mitya" class="form-btn " target="_blank" rel="noopener noreferrer">Send
+                  Button</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
     </div>
   </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12 col-12">
+        <p class="copyright-text text-center"> &copy; 2023 Dmytro Zamay . All rights reserved</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="index.js"></script>
+
 </body>
 </html>
