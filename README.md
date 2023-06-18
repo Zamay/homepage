@@ -1,2 +1,3 @@
 # homepage
-My very own personal website. Basically this is just a résumé.
+v2.0.21 - Це перше портфоліо, яке я зробив в 2021 році на курсі
+v2.0.23 - Це нова версія портфоліо
