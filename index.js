@@ -2,22 +2,29 @@
   "use strict";
 
 // COLOR MODE
-  const colorMode = document.querySelector('.color-mode');
-  colorMode.addEventListener('click', () => {
+  function toggleColorMode() {
     const colorModeIcon = document.querySelector('#theme-toggle-dark-icon');
-    colorModeIcon.classList.toggle('active');
-    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.toggle('dark-mode');
 
-    if (document.body.classList.contains('dark-mode')) {
-      colorModeIcon.classList.remove('fa-moon');
-      colorModeIcon.classList.add('fa-sun');
-      colorModeIcon.classList.add('animate-spin');
-    } else {
-      colorModeIcon.classList.remove('fa-sun');
-      colorModeIcon.classList.add('fa-moon');
-      colorModeIcon.classList.remove('animate-spin')
+    colorModeIcon.classList.toggle('fa-moon', !isDarkMode);
+    colorModeIcon.classList.toggle('fa-sun', isDarkMode);
+    colorModeIcon.classList.toggle('animate-spin', isDarkMode);
+  }
+
+  function applyColorModeBasedOnTime() {
+    const currentTime = new Date();
+    const currentHour = currentTime.getHours();
+    const isNightTime = currentHour >= 20 || currentHour < 6;
+
+    if (isNightTime) {
+      toggleColorMode();
     }
-  });
+  }
+
+  const colorMode = document.querySelector('.color-mode');
+  colorMode.addEventListener('click', toggleColorMode);
+
+  applyColorModeBasedOnTime();
 
   // TOGGLE NAV ( переписана bootstrap логіка, але без анімації )
   function toggleNavbar() {

@@ -270,14 +270,14 @@ b, strong {
   right: 6px;
 }
 .color-mode-icon:after {
-  font-family: 'unicons';
+  font-family: 'unicons', serif;
   content: '\ea9f';
   font-size: 30px;
   font-weight: 300;
   font-style: normal;
 }
 .color-mode-icon.active:after {
-  font-family: 'unicons';
+  font-family: 'unicons', serif;
   content: '\eb65';
   font-size: 30px;
   color: #ffffff;
@@ -515,7 +515,7 @@ b, strong {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  font-family: 'unicons';
+  font-family: 'unicons', serif;
   font-size: 100px;
   line-height: normal;
 }
@@ -649,7 +649,6 @@ b, strong {
   }
 
   .navbar-collapse {
-    background: #ffffff;
     text-align: center;
   }
 
