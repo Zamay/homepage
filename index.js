@@ -30,16 +30,25 @@
   function toggleNavbar() {
     const navbar = document.getElementById('navbarNav');
     const navbarToggler = document.querySelector('.navbar-toggler');
+    const navLinks = document.querySelectorAll('.nav-link');
 
     if (navbar.classList.contains('show')) {
       navbar.classList.remove('show');
       navbarToggler.classList.add('collapsed');
       navbarToggler.setAttribute('aria-expanded', 'false');
+
+      navLinks.forEach((link) => {
+        link.classList.remove('show');
+      });
     } else {
       navbar.classList.add('show');
       navbarToggler.classList.remove('collapsed');
       navbarToggler.setAttribute('aria-expanded', 'true');
     }
+
+    navLinks.forEach((link) => {
+      link.classList.add('show');
+    });
   }
 
   const navbarToggler = document.querySelector('.navbar-toggler');
