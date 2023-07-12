@@ -657,6 +657,11 @@ b, strong {
   color: #ffc200;
 }
 
+.certificate:hover {
+  color: #f7f3f3 !important;
+  cursor: pointer;
+}
+
 @media (min-width: 1270px) {
   .owl-theme .owl-dots {
     position: relative;
