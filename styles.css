@@ -82,7 +82,7 @@ b, strong {
   background: #eee;
   color: #5b5b5b;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: 0.5rem;
   padding: 13px 29px;
   font-size: 14px;
   line-height: normal;
@@ -323,7 +323,7 @@ b, strong {
 }
 
 .project {
-  margin: 300px 0;
+  margin: 0;
 }
 
 .dark-mode {
@@ -669,6 +669,33 @@ b, strong {
   }
 }
 
+.project-card {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  border-left: 3px solid #ffc200;
+  box-shadow: 0px 0px 15px 15px rgba(0, 0, 0, .05);
+  padding: 25px;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, .1);
+}
+
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 20px;
+  border: 1px solid #f0f0f0;
+}
+
+
 @media (max-width: 991px) {
   .full-screen {
     padding-bottom: 4rem;
@@ -721,7 +748,7 @@ b, strong {
   }
 
   .project {
-    margin: 250px 0;
+    margin: 0;
   }
 
 }
@@ -835,4 +862,73 @@ b, strong {
 
 #navbarNav {
   transition: max-height 0.3s ease;
+}
+
+.dark-mode .project-card {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  border-top: 3px solid #ffc200;
+}
+
+.dark-mode .project-img {
+  border: 1px solid #333;
+  opacity: 0.9;
+}
+
+.project-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #5b5b5b;
+  /* background-color: #eee; */
+  padding: 5px 12px;
+  border-radius: 0.5rem;
+  border: 1px solid #eee;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.prj1,
+.custom-btn.prj1 {
+  background-color: #a3b6b4;
+}
+
+.prj1-tag {
+  border: 1px solid #a3b6b4;
+}
+
+.prj2,
+.custom-btn.prj2 {
+  background-color: #b1ceec;
+}
+.prj2-tag {
+  border: 1px solid #b1ceec;
+}
+
+.prj3,
+.custom-btn.prj3 {
+  background-color: #474559;
+}
+.prj3-tag {
+  border: 1px solid #474559;
+}
+
+.prj4,
+.custom-btn.prj4 {
+  background-color: #182533;
+}
+
+.prj4-tag {
+  border: 1px solid #182533;
+}
+
+.dark-mode .project-tag {
+  background-color: #2a2a2a;
+  color: #ccc;
+}
+
+.project-tag:hover {
+  background-color: #ffc200;
+  color: #ffffff;
 }
